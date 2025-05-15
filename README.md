@@ -7,7 +7,7 @@ It allows employees to submit issues and routes them automatically to the releva
 
 ## 🚧 Project Status
 
-This project is a work in progress. More advanced AI-driven features are planned
+This project is a work in progress. More AI-driven features are planned.
 
 ---
 
@@ -36,7 +36,7 @@ This project is a work in progress. More advanced AI-driven features are planned
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/ticketpilot.git
+git clone https://github.com/hajaruk-git/ticketpilot.git
 cd ticketpilot
 ```
 
@@ -81,9 +81,3 @@ In `config.py`, you can change:
 
 - `STORAGE_MODE = "csv"` or `"airtable"`
 - Available categories, statuses, urgency levels
-
----
-
-## 📜 License
-
-MIT — see [LICENSE](LICENSE) for more details.
