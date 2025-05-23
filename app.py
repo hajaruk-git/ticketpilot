@@ -1,4 +1,3 @@
-
 import streamlit as st
 from datetime import datetime
 from uuid import uuid4
@@ -33,7 +32,7 @@ st.title("🎫 TicketPilot - Submit a Support Ticket")
 with st.form("ticket_form"):
     name = st.text_input("Your Name")
     email = st.text_input("Your Email")
-    category = st.selectbox("Category", CATEGORIES)
+    category = "IT"
     message = st.text_area("Describe your issue")
 
     submitted = st.form_submit_button("Submit Ticket")

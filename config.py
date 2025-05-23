@@ -1,7 +1,7 @@
 
-STORAGE_MODE = "airtable" #or "csv"
+STORAGE_MODE = "csv" #or "airtable"
 
-CATEGORIES = ["IT", "HR", "Logistics", "Other"]
+CATEGORIES = ["IT"]
 
 URGENCY_LEVELS = ["High", "Medium", "Low"]
 

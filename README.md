@@ -1,31 +1,37 @@
 # 🎫 TicketPilot
 
-TicketPilot is a simple internal support ticketing app built with Streamlit, OpenAI, and Airtable or CSV.  
-It allows employees to submit issues and routes them automatically to the relevant department, while detecting urgency via GPT.
+TicketPilot is a lightweight internal ticketing system built with Streamlit, OpenAI, and Airtable (or CSV).  
+It allows employees to submit IT support requests while integrating AI to enhance ticket management.
+
+GPT is used to:
+- Automatically classify the urgency level of each ticket (High, Medium, Low)
+- Generate quarterly analytical reports identifying the most frequent issues and improvement areas
 
 ---
 
 ## 🚧 Project Status
 
-This project is a work in progress. More AI-driven features are planned.
+This project is a work in progress.
 
 ---
 
 ## 🚀 Features
 
-- ✍️ Employee form: Name, Email, Category, Message
-- 🤖 GPT-powered urgency detection (`High`, `Medium`, `Low`)
-- 📬 Email confirmation upon ticket submission
-- ☁️ Airtable or local CSV storage (configurable)
-- 🛠️ Easy to extend with admin interface or automation
-- 📦 Ready to deploy with `.env` configuration
+- ✍️ Employee ticket submission form (Name, Email, Category, Message)
+- 🤖 Automatic urgency classification powered by GPT-3.5 (`High`, `Medium`, `Low`)
+- 📬 Email confirmation sent to the user upon ticket creation
+- ☁️ Flexible data storage: Airtable or local CSV (configurable)
+- 📊 **Quarterly analysis module** powered by GPT-4:
+  - Identifies the most frequent IT issues over a selected quarter
+  - Categorizes problems by theme (network, access, hardware…)
+  - Outputs a structured markdown report for internal review
 
 ---
 
 ## ⚙️ Technologies
 
 - [Streamlit](https://streamlit.io/) — UI
-- [OpenAI GPT](https://platform.openai.com/docs) — urgency classification
+- [OpenAI GPT](https://platform.openai.com/docs) — urgency classification and quarterly analysis
 - [Airtable API](https://airtable.com/developers) — optional backend
 - `Python`, `dotenv`, `smtplib`, `pyairtable`
 
