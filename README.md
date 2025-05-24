@@ -1,6 +1,6 @@
 # 🎫 TicketPilot
 
-TicketPilot is a lightweight internal ticketing system built with Streamlit, OpenAI, and Airtable (or CSV).  
+TicketPilot is a lightweight internal ticketing system built with Streamlit, OpenAI, and Airtable (or CSV).
 It allows employees to submit IT support requests while integrating AI to enhance ticket management.
 
 GPT is used to:
@@ -87,3 +87,23 @@ In `config.py`, you can change:
 
 - `STORAGE_MODE = "csv"` or `"airtable"`
 - Available categories, statuses, urgency levels
+
+---
+
+## 🧰 Dummy Data Generator
+
+To facilitate testing for the GPT-based quarterly analysis module, this project includes a utility script:
+
+### Run the generator
+
+```bash
+python generate_dummy_tickets.py
+```
+
+This script generates 100 realistic IT support tickets with randomized names, messages, and timestamps.
+The data will be saved either in:
+- tickets.csv — if STORAGE_MODE = "csv"
+- Airtable — if STORAGE_MODE = "airtable"
+
+Make sure to set your preferred storage mode in config.py before running the script.
+You can also manually submit real tickets using the main Streamlit interface.

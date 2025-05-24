@@ -8,6 +8,7 @@ import os
 import smtplib
 from email.message import EmailMessage
 from dotenv import load_dotenv
+import pytz
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -39,7 +40,7 @@ with st.form("ticket_form"):
 
 if submitted:
     ticket_id = f"TICKET-{uuid4().hex[:8].upper()}"
-    created_at = datetime.now().isoformat()
+    created_at = datetime.now(pytz.UTC).isoformat()
 
     prompt = f"""
 You are a support assistant. Classify the urgency of the following message into one of three levels:

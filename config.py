@@ -1,5 +1,4 @@
-
-STORAGE_MODE = "csv" #or "airtable"
+STORAGE_MODE = "airtable" #or "csv"
 
 CATEGORIES = ["IT"]
 
